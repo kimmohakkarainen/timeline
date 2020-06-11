@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState } from "react";
 import "./styles.css";
 import Sankey from "./Sankey2";
+import Timeline from "./Timeline";
 /* import Sankey from "./ForceGraph"; */
 import Exadeci from "./exadeci";
 import AtozData from "./data/atozdata";
@@ -32,19 +33,10 @@ export default function App() {
   }, []);
 
   /*
-      <div style={{ fontSize: 100 }}>ɘksɐdɘsɪ</div>
-      <Exadeci width={size.width} height={50} />
-      <Exadeci width={size.width} height={50} />
-      <Sankey
-        data={[data1, data2, data3, data4, data5]}
-        width={size.width}
-        height={size.height}
-      />
-
-*/
 
   return (
     <div className="App">
+      
       <Sankey
         data={[data1, data2, data3, data4, data5]}
         width={size.width}
@@ -53,11 +45,10 @@ export default function App() {
     </div>
   );
 
-  /*
-  return (
-    <div className="App">
-      <PersonAdminView />
-    </div>
-  );
   */
+  return (
+    <div className="App">
+      <Timeline width={100} height={100} />
+    </div>
+  );
 }
