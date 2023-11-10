@@ -8,7 +8,7 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "axios": "0.19.2",
+    "axios": "1.6.0",
     "d3": "5.16.0",
     "d3-array": "2.4.0",
     "d3-collection": "1.0.7",
